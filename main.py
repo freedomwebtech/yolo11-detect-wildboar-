@@ -5,7 +5,7 @@ import cvzone
 
 
 
-# Load the YOLOv8 model
+# Load the YOLO11 model
 model = YOLO(|"best.pt")
 names=model.names
 # Open the video file (use video file or webcam, here using webcam)
@@ -25,7 +25,7 @@ while True:
 
     frame = cv2.resize(frame, (1020, 500))
     
-    # Run YOLOv8 tracking on the frame, persisting tracks between frames
+    # Run YOLO11 tracking on the frame, persisting tracks between frames
     results = model.track(frame, persist=True)
 
     # Check if there are any boxes in the results
