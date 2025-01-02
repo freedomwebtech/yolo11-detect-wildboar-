@@ -2,15 +2,7 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 import cvzone
-import numpy as np
 
-def RGB(event, x, y, flags, param):
-    if event == cv2.EVENT_MOUSEMOVE:
-        point = [x, y]
-        print(point)
-
-cv2.namedWindow('RGB')
-cv2.setMouseCallback('RGB', RGB)
 
 
 # Load the YOLOv8 model
